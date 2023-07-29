@@ -66,7 +66,7 @@ ul {
 
 .btn-home {
     position: absolute;
-    top: 62%;
+    top: 66%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -151,19 +151,7 @@ ul {
 }
 
 
-/* .right-slide-set {
-    position: absolute;
-    position: sticky;
-    left: 90%;
-    top: 50%;
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
 
-} */
 
 .slide-icon{
     cursor: pointer;

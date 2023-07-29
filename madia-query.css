@@ -25,8 +25,7 @@
     }
     .btn-home{
         position: absolute;
-      
-        top: 70%;
+        top: 72%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
@@ -60,8 +59,7 @@
     }
     .btn-home{
         position: absolute;
-     
-        top: 67%;
+        top: 68%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;

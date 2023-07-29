@@ -31,7 +31,7 @@ function myFunction_black() {
 
 
 window.onscroll = function () {
-    if (scrollY >= 650) {
+    if (scrollY >= 600) {
         navBar.style.background = "white"
         navBar.classList.remove("navbar-dark")
         navBar.classList.add("navbar-light")
