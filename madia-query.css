@@ -23,6 +23,15 @@
     .family-bakery {
         font-size: 25px;
     }
+    .btn-home{
+        position: absolute;
+      
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
 }
 
 
@@ -48,6 +57,15 @@
 
     .family-bakery {
         font-size: 25px;
+    }
+    .btn-home{
+        position: absolute;
+     
+        top: 64%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
     }
 }
 
