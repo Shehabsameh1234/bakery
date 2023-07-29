@@ -75,7 +75,9 @@
 @media (min-width: 641px) and (max-width: 800px) {}
 
 
-@media (min-width: 801px) and (max-width: 1024px) {}
+@media (min-width: 801px) and (max-width: 1024px) {
+   
+}
 
 /* Desktops and laptops  small screne]----------- */
 @media (min-width: 1025px) and (max-width: 1280px) {}
@@ -85,3 +87,26 @@
 @media (min-width: 1281px) and (max-width: 1800px) {}
 
 @media (min-device-width:1801px)and (max-device-width: 2200px) {}
+
+
+@media (min-width: 0px) and (max-width: 991px) {
+    .nav-background{
+        background-color: white !important;
+     
+    } 
+    .nav-link{
+        color: black !important;
+    }
+    .me-3{
+        margin: 0 !important;
+    }
+ 
+    .underline-nav{
+        display:none;
+    
+    } 
+    .underline-nav-home {
+        display: none;
+  
+    }
+}

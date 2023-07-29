@@ -10,29 +10,30 @@ body {
 }
 
 
-:root{
+:root {
     scroll-behavior: smooth;
-    
+
 }
+
 /* global */
-
-
 
 
 /* var */
 :root {
     --brown: #946621;
     --white: 'IBM Plex Sans', sans-serif;
-
 }
 
 /* var */
 
 
 
+ul {
+    position: relative;
+    top: 7px;
+}
 
-
-.bakery-font{
+.bakery-font {
     font-size: 2rem;
     position: relative;
     bottom: 5px;
@@ -59,7 +60,7 @@ body {
 }
 
 
-.head-btn1{
+.head-btn1 {
     background-color: var(--brown);
     color: white;
     border: solid 2px transparent;
@@ -67,11 +68,11 @@ body {
     transition: all .5s;
 }
 
-.head-btn1:hover{
-  background-color: white;
+.head-btn1:hover {
+    background-color: white;
 }
 
-.head-btn2{
+.head-btn2 {
     background-color: transparent;
     color: white;
     border: solid 2px white;
@@ -79,9 +80,8 @@ body {
     transition: all .5s;
 }
 
-.head-btn2:hover{
-  background-color: white;
-
+.head-btn2:hover {
+    background-color: white;
 }
 
 .btn:focus {
@@ -89,24 +89,36 @@ body {
     box-shadow: none;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--brown) !important;
-   
-   
 }
 
 
-
-/* .underline-nav::after{
-    content: "";
-    display:inline-block;
+.underline-nav {
+    display: inline-block;
     position: relative;
-    bottom: .8rem;
-    width: 100%;
-    height: 2px; 
+    bottom: 1.5rem;
+    left: 8px;
+    width: 0%;
+    height: 2px;
     background-color: var(--brown);
     opacity: 1;
-} */
+    transition: all .5s;
+}
 
+.underline-nav-home {
+    display: inline-block;
+    position: relative;
+    bottom: 1.5rem;
+    left: 8px;
+    width: 30%;
+    height: 2px;
+    background-color: var(--brown);
+    opacity: 1;
+    transition: all .5s;
+}
 
-
+.nav-item:hover .underline-nav,
+.nav-item:hover .underline-nav-home {
+    width: 58%;
+}
