@@ -28,8 +28,6 @@ body {
 /* var */
 
 
-
-
 ul {
     position: relative;
     top: 8px;
@@ -59,8 +57,8 @@ ul {
     background-attachment: fixed;
     width: 100%;
     height: 100vh;
-    position: static;
-    
+
+
 }
 
 .head-btn1 {
@@ -129,10 +127,12 @@ ul {
     background-color: white;
     width: 40px;
     height: 30px;
-    position: absolute;
+    position: sticky;
     top: 50%;
-    right: 0%;
+    left: 100%;
     padding: 0 10px;
+    float: left; 
+    z-index: 555555;
 }
 
 

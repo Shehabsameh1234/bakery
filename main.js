@@ -34,22 +34,6 @@ function myFunction_black() {
 
 
 window.onscroll = function () {
-  if (scrollY >= 30) {
-
-    slidepos.style.cssText = `
-  position: sticky;
-  top: 50%;
-  left: 100%;
-  
-  `
-
-  } else {
-    slidepos.style.cssText = `
-  position: absolute;
-  top: 55%;
-  right: 0%;
-  `
-  }
 
   if (scrollY >= 500) {
     navBar.style.background = "white"
