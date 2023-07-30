@@ -24,6 +24,9 @@
         font-size: 25px;
     }
  
+    .center-about-height{
+        height: 300px;
+    }
 }
 
 
@@ -50,6 +53,10 @@
     .family-bakery {
         font-size: 25px;
     }
+
+    .center-about-height{
+        height: 350px;
+    }
    
 }
 
@@ -71,6 +78,11 @@
         font-size: 13px;
     }
 
+    .center-about-height{
+        height: 420px;
+    }
+
+
 }
 
 
@@ -85,13 +97,37 @@
     .center-about-height{
         height: 500px;
     }
-    
+ 
 }
-
-/* Desktops and laptops  small screne]----------- */
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .center-about-height{
-        height: 500px;
+    .font-about{
+        font-size: 17px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+    
+    .border-icon-about {
+        border: solid 1px rgb(211, 207, 207);
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+     
+    }
+    
+    
+    #about i {
+        text-align: center;
+        margin-left: 30% !important;
+        margin-top: 30% !important;
+        color: var(--brown);
+        font-size: 12px;
+    }
+    
+    #about .fa-users {
+        margin-left: 25% !important;
+        margin-top: 25% !important;
     }
  
 }
@@ -100,9 +136,34 @@
 
 @media (min-width: 1281px) and (max-width: 1800px) {
    
+    .font-about{
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
 }
 
-@media (min-device-width:1801px)and (max-device-width: 2200px) {}
+@media (min-device-width:1801px)and (max-device-width: 2200px) {
+    .font-about{
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 0px) and (max-width: 991px) {
@@ -126,3 +187,52 @@
   
     }
 }
+
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    
+    .font-about{
+        font-size: 15px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+    
+    .border-icon-about {
+        border: solid 1px rgb(211, 207, 207);
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+     
+    }
+    
+    
+    #about i {
+        text-align: center;
+        margin-left: 30% !important;
+        margin-top: 30% !important;
+        color: var(--brown);
+        font-size: 10px;
+    }
+    
+    #about .fa-users {
+        margin-left: 25% !important;
+        margin-top: 25% !important;
+    }
+  
+}
+
+
+@media (min-width: 0px) and (max-width: 767px) {
+   
+    .font-about{
+      
+      
+        padding-left: 25px;
+    }
+   
+}
+
+
+
