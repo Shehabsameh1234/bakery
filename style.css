@@ -22,7 +22,7 @@ body {
 /* var */
 :root {
     --brown: #946621;
-    --font: 'IBM Plex Sans', sans-serif;
+    --font:  'Alegreya', serif;;
 }
 
 /* var */
@@ -131,7 +131,7 @@ ul {
     top: 50%;
     left: 100%;
     padding: 0 10px;
-    float: left; 
+    float: left;
     z-index: 555555;
 }
 
@@ -190,5 +190,86 @@ ul {
     margin-left: 5px;
     cursor: pointer;
     display: none;
+
+}
+
+
+.dot-animation {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+}
+
+.dot-animation p {
+    width: 30px;
+    height: 45px;
+    border-radius: 40%;
+    border: solid 2px white;
+    background-color: transparent;
+}
+
+.dot-animation p span {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: dot-animation  1s 1s infinite;
+    opacity: 1;
+}
+
+@keyframes dot-animation {
+    0% {
+        top: 10%;
+        opacity: 1;
+    }
+
+    20% {
+        top: 15.5%;
+        opacity: .9;
+    }
+
+    30% {
+        top: 21%;
+        opacity: .8;
+    }
+
+    40% {
+        top: 26.5%;
+        opacity: .7;
+    }
+
+    50% {
+        top: 31%;
+        opacity: .6;
+    }
+
+    60% {
+        top: 36.5%;
+        opacity: .5;
+    }
+
+    70% {
+        top: 41%;
+        opacity: .4;
+    }
+
+    80% {
+        top: 46.5%;
+        opacity: .3;
+    }
+
+    90% {
+        top: 51%;
+        opacity: .2;
+    }
+
+    100% {
+        top: 55%;
+        opacity: 0;
+    }
 
 }
