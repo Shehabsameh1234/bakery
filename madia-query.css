@@ -142,6 +142,8 @@
         padding-bottom: 30px;
         padding-left: 20px;
     }
+   
+   
 }
 
 @media (min-device-width:1801px)and (max-device-width: 2200px) {
@@ -151,6 +153,7 @@
         padding-bottom: 30px;
         padding-left: 20px;
     }
+
 }
 
 
@@ -227,8 +230,6 @@
 @media (min-width: 0px) and (max-width: 767px) {
    
     .font-about{
-      
-      
         padding-left: 25px;
     }
    
