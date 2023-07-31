@@ -30,6 +30,9 @@
     .w-offers{
         width: 100%;
     }
+    #offer{
+        margin-top: 150px; 
+    }
 }
 
 
@@ -63,6 +66,9 @@
     .w-offers{
         width: 100%;
     }
+    #offer{
+        margin-top: 90px; 
+    }
    
 }
 
@@ -87,7 +93,9 @@
     .center-about-height{
         height: 420px;
     }
-
+    #offer{
+        margin-top: 0px; 
+    }
 
 }
 
@@ -96,12 +104,19 @@
     .center-about-height{
         height: 500px;
     }
+    #offer{
+      
+        margin-top: 0px; 
+    }
 }
 
 
 @media (min-width: 801px) and (max-width: 1024px) {
     .center-about-height{
         height: 500px;
+    }
+    #offer{
+        margin-top: 0px; 
     }
   
  
@@ -140,6 +155,10 @@
     .w-offers{
         width:95%;
     }
+    #offer{
+      
+        margin-top: 10px; 
+    }
 }
 
 /* Desktops and laptops ----------- */
@@ -156,11 +175,14 @@
     .w-offers{
         width: 90%;
     }
-   
+    #offer{
+      
+        margin-top: 40px; 
+    }
    
 }
 
-@media (min-device-width:1801px)and (max-device-width: 2200px) {
+@media (min-width:1801px)and (max-width: 2200px) {
     .font-about{
         
         padding-top: 30px;
