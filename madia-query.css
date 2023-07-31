@@ -27,6 +27,9 @@
     .center-about-height{
         height: 300px;
     }
+    .w-offers{
+        width: 100%;
+    }
 }
 
 
@@ -56,6 +59,9 @@
 
     .center-about-height{
         height: 350px;
+    }
+    .w-offers{
+        width: 100%;
     }
    
 }
@@ -97,6 +103,7 @@
     .center-about-height{
         height: 500px;
     }
+  
  
 }
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -130,6 +137,9 @@
         margin-top: 25% !important;
     }
  
+    .w-offers{
+        width:95%;
+    }
 }
 
 /* Desktops and laptops ----------- */
@@ -142,6 +152,10 @@
         padding-bottom: 30px;
         padding-left: 20px;
     }
+
+    .w-offers{
+        width: 90%;
+    }
    
    
 }
@@ -153,7 +167,7 @@
         padding-bottom: 30px;
         padding-left: 20px;
     }
-
+  
 }
 
 

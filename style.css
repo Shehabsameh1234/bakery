@@ -313,4 +313,33 @@ ul {
 }
 
 
+#offer{
+    background-color: #f8f8f8;
+    
+}
+#offer *{
+   font-family: var(--font);
+    
+}
+#offer h2{
+    padding-top: 50px;
+    font-size: 50px;
+   font-family: 'Times New Roman', Times, serif; 
+}
+
+#offer h2 span{
+    color: var(--brown);
+    font-size: 55px;
+}
+
+.color-price{
+    color: var(--brown);
+}
+
+
+.w-offers{
+    width: 80%;
+}
+
+
 
