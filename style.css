@@ -342,4 +342,16 @@ ul {
 }
 
 
+.offers-scale{
+    transition: all .3s;
+   
+}
+
+.offers-scale:hover{
+transform: scale(1.02);
+transform: rotateX('180');
+
+}
+
+
 
