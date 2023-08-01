@@ -37,10 +37,11 @@ function myFunction_black() {
 
 window.onscroll = function () {
 
-  if (scrollY >= 500) {
+  if (scrollY >= 300) {
     navBar.style.background = "white"
     navBar.classList.remove("navbar-dark")
     navBar.classList.add("navbar-light")
+    document.getElementById("nav-bar").style.transition = "all .4s";
     spanAbout.classList.add("underline-nav")
     spanOffer.classList.add("underline-nav")
     spanGallery.classList.add("underline-nav")
