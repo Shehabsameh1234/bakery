@@ -68,6 +68,7 @@ window.onscroll = function () {
 
 function slider() {
   if (slideRight.offsetWidth == "200") {
+    iconSliede.classList.remove("animation")
     slideRight.style.width = "40px"
     iconSliede.style.bottom = "0%"
     iconSliede.style.top = "6%"
@@ -78,9 +79,10 @@ function slider() {
     slideBlack.style.display = "none"
   } else {
 
+    iconSliede.classList.add("animation")
     iconSliede.style.position = "relative"
     iconSliede.style.left = "0%"
-    iconSliede.style.top = "-3PX"
+    iconSliede.style.top = "-5PX"
     slideRight.style.width = "200px"
     slideRed.style.display = "inline-block"
     slideTeal.style.display = "inline-block"

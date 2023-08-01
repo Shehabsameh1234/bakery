@@ -149,7 +149,40 @@ ul {
 .slide-icon {
     cursor: pointer;
     position: relative;
-    top: 3px;
+    top: 2px;
+    
+}
+
+.animation{
+    animation: spin 2s linear  infinite ;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+
+    }
+    to{
+        transform: rotate(360deg);
+
+    }
+    /* 20%{
+       
+
+    }
+
+    40%{
+       
+    }
+
+    60%{
+       
+    }
+
+    80%{
+       
+    } */
+   
 }
 
 
