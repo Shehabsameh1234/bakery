@@ -12,7 +12,7 @@ let slideTomato = document.getElementById("slide-tomato")
 let slideBlack = document.getElementById("slide-black")
 var rootCss = document.querySelector(':root')
 var slidepos = document.querySelector('.right-slide-color')
-let imglogo=document.getElementById("img-logo")
+let imglogo = document.getElementById("img-logo")
 
 
 
@@ -47,9 +47,11 @@ window.onscroll = function () {
     spanGallery.classList.add("underline-nav")
     spanBlog.classList.add("underline-nav")
     spanContact.classList.add("underline-nav")
-    imglogo.setAttribute("src","img/chef-hat (1).png")
-  
+    imglogo.setAttribute("src", "img/chef-hat (1).png")
+
+
   } else {
+
     navBar.style.background = "transparent"
     navBar.classList.add("navbar-dark")
     spanAbout.classList.remove("underline-nav")
@@ -57,8 +59,8 @@ window.onscroll = function () {
     spanGallery.classList.remove("underline-nav")
     spanBlog.classList.remove("underline-nav")
     spanContact.classList.remove("underline-nav")
-    imglogo.setAttribute("src","img/chef-hat (2).png")
-  
+    imglogo.setAttribute("src", "img/chef-hat (2).png")
+
   }
 }
 
@@ -67,6 +69,9 @@ window.onscroll = function () {
 
 
 function slider() {
+
+
+
   if (slideRight.offsetWidth == "200") {
     iconSliede.classList.remove("animation")
     slideRight.style.width = "40px"
@@ -77,8 +82,12 @@ function slider() {
     slideTeal.style.display = "none"
     slideTomato.style.display = "none"
     slideBlack.style.display = "none"
-  } else {
+    document.getElementById("right-slide").style.transition = "all 1s";
+  }
 
+
+  else  {
+    document.getElementById("right-slide").style.transition = "all 0s";
     iconSliede.classList.add("animation")
     iconSliede.style.position = "relative"
     iconSliede.style.left = "0%"
@@ -88,9 +97,8 @@ function slider() {
     slideTeal.style.display = "inline-block"
     slideTomato.style.display = "inline-block"
     slideBlack.style.display = "inline-block"
-
   }
-}
 
+}
 
 
