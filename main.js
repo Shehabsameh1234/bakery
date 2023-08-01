@@ -12,6 +12,8 @@ let slideTomato = document.getElementById("slide-tomato")
 let slideBlack = document.getElementById("slide-black")
 var rootCss = document.querySelector(':root')
 var slidepos = document.querySelector('.right-slide-color')
+let imglogo=document.getElementById("img-logo")
+
 
 
 
@@ -44,6 +46,7 @@ window.onscroll = function () {
     spanGallery.classList.add("underline-nav")
     spanBlog.classList.add("underline-nav")
     spanContact.classList.add("underline-nav")
+    imglogo.setAttribute("src","img/chef-hat (2).png")
   
   } else {
     navBar.style.background = "transparent"
@@ -53,6 +56,7 @@ window.onscroll = function () {
     spanGallery.classList.remove("underline-nav")
     spanBlog.classList.remove("underline-nav")
     spanContact.classList.remove("underline-nav")
+    imglogo.setAttribute("src","img/chef-hat (1).png")
   
   }
 }
