@@ -46,7 +46,7 @@ window.onscroll = function () {
     spanGallery.classList.add("underline-nav")
     spanBlog.classList.add("underline-nav")
     spanContact.classList.add("underline-nav")
-    imglogo.setAttribute("src","img/chef-hat (2).png")
+    imglogo.setAttribute("src","img/chef-hat (1).png")
   
   } else {
     navBar.style.background = "transparent"
@@ -56,7 +56,7 @@ window.onscroll = function () {
     spanGallery.classList.remove("underline-nav")
     spanBlog.classList.remove("underline-nav")
     spanContact.classList.remove("underline-nav")
-    imglogo.setAttribute("src","img/chef-hat (1).png")
+    imglogo.setAttribute("src","img/chef-hat (2).png")
   
   }
 }
