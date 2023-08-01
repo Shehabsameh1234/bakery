@@ -22,6 +22,7 @@ body {
 :root {
     --brown: #946621;
     --font:   'Alegreya Sans SC', sans-serif;
+    --font-header: 'Amatic SC', cursive;
 }
 
 /* var */
@@ -329,13 +330,13 @@ ul {
 }
 #offer h2{
     padding-top: 50px;
-    font-size: 50px;
-   font-family: 'Times New Roman', Times, serif; 
+    font-size: 55px;
+   font-family: var(--font-header); 
 }
 
 #offer h2 span{
     color: var(--brown);
-    font-size: 55px;
+    font-size: 70px;
 }
 
 .color-price{
