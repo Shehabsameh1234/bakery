@@ -70,35 +70,32 @@ window.onscroll = function () {
 
 function slider() {
 
-
-
-  if (slideRight.offsetWidth == "200") {
-    iconSliede.classList.remove("animation")
-    slideRight.style.width = "40px"
-    iconSliede.style.bottom = "0%"
-    iconSliede.style.top = "6%"
-    iconSliede.style.right = "15%"
+   if (slideRight.offsetWidth == "200") {
     slideRed.style.display = "none"
     slideTeal.style.display = "none"
     slideTomato.style.display = "none"
     slideBlack.style.display = "none"
-    document.getElementById("right-slide").style.transition = "all 1s";
+    iconSliede.classList.remove("animation")
+    slideRight.style.width = "40px"
+    iconSliede.style.top = "3px"
+    
   }
 
-
-  else  {
-    document.getElementById("right-slide").style.transition = "all 0s";
-    iconSliede.classList.add("animation")
-    iconSliede.style.position = "relative"
-    iconSliede.style.left = "0%"
-    iconSliede.style.top = "-5PX"
-    slideRight.style.width = "200px"
+  else if (slideRight.offsetWidth == "40") {
     slideRed.style.display = "inline-block"
     slideTeal.style.display = "inline-block"
     slideTomato.style.display = "inline-block"
     slideBlack.style.display = "inline-block"
+    iconSliede.classList.add("animation")
+    iconSliede.style.position = "relative"
+    iconSliede.style.top = "-4PX"
+    slideRight.style.width = "200px"
+  
   }
 
 }
+
+
+
 
 

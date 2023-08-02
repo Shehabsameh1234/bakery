@@ -141,15 +141,16 @@ ul {
     padding: 0 10px;
     float: left;
     z-index: 555555;
+    
 }
-
 
 
 
 .slide-icon {
     cursor: pointer;
     position: relative;
-    top: 2px;
+    top: 3px;
+   
     
 }
 
