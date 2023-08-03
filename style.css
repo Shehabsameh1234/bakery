@@ -44,7 +44,7 @@ ul {
     font-weight: 900;
     font-size: 2.3rem;
     position: relative;
-    bottom: 5px;
+    bottom: 0px;
 }
 
 .head-welcome {
@@ -377,6 +377,11 @@ transform: scale(1.02);
 transform: rotateX('180');
 
 }
+
+
+
+
+
 
 
 
