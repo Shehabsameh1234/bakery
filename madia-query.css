@@ -23,15 +23,17 @@
     .family-bakery {
         font-size: 25px;
     }
- 
-    .center-about-height{
+
+    .center-about-height {
         height: 300px;
     }
-    .w-offers{
+
+    .w-offers {
         width: 90%;
     }
-    #offer{
-        margin-top: 150px; 
+
+    #offer {
+        margin-top: 150px;
     }
 }
 
@@ -60,16 +62,18 @@
         font-size: 25px;
     }
 
-    .center-about-height{
+    .center-about-height {
         height: 350px;
     }
-    .w-offers{
+
+    .w-offers {
         width: 90%;
     }
-    #offer{
-        margin-top: 90px; 
+
+    #offer {
+        margin-top: 90px;
     }
-   
+
 }
 
 
@@ -90,55 +94,59 @@
         font-size: 13px;
     }
 
-    .center-about-height{
+    .center-about-height {
         height: 420px;
     }
-    #offer{
-        margin-top: 0px; 
+
+    #offer {
+        margin-top: 0px;
     }
 
 }
 
 
 @media (min-width: 641px) and (max-width: 800px) {
-    .center-about-height{
+    .center-about-height {
         height: 500px;
     }
-    #offer{
-      
-        margin-top: 0px; 
+
+    #offer {
+
+        margin-top: 0px;
     }
 }
 
 
 @media (min-width: 801px) and (max-width: 1024px) {
-    .center-about-height{
+    .center-about-height {
         height: 500px;
     }
-    #offer{
-        margin-top: 0px; 
+
+    #offer {
+        margin-top: 0px;
     }
-  
- 
+
+
 }
+
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .font-about{
+    .font-about {
         font-size: 17px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
     }
-    
+
     .border-icon-about {
         border: solid 1px rgb(211, 207, 207);
         display: inline-block;
         width: 30px;
         height: 30px;
         border-radius: 50%;
-     
+
     }
-    
-    
+
+
     #about i {
         text-align: center;
         margin-left: 30% !important;
@@ -146,50 +154,52 @@
         color: var(--brown);
         font-size: 12px;
     }
-    
+
     #about .fa-users {
         margin-left: 25% !important;
         margin-top: 25% !important;
     }
- 
-    .w-offers{
-        width:95%;
+
+    .w-offers {
+        width: 95%;
     }
-    #offer{
-      
-        margin-top: 10px; 
+
+    #offer {
+
+        margin-top: 10px;
     }
 }
 
 /* Desktops and laptops ----------- */
 
 @media (min-width: 1281px) and (max-width: 1800px) {
-   
-    .font-about{
-        
+
+    .font-about {
+
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
     }
 
-    .w-offers{
+    .w-offers {
         width: 90%;
     }
-    #offer{
-      
-        margin-top: 40px; 
+
+    #offer {
+
+        margin-top: 40px;
     }
-   
+
 }
 
 @media (min-width:1801px)and (max-width: 2200px) {
-    .font-about{
-        
+    .font-about {
+
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
     }
-  
+
 }
 
 
@@ -206,47 +216,50 @@
 
 
 @media (min-width: 0px) and (max-width: 991px) {
-    .nav-background{
+    .nav-background {
         background-color: white !important;
-     
-    } 
-    .nav-link{
+
+    }
+
+    #nav-bar .nav-link {
         color: black !important;
     }
-    .me-3{
+
+    .me-3 {
         margin: 0 !important;
     }
- 
-    .underline-nav{
-        display:none;
-    
-    } 
+
+    .underline-nav {
+        display: none;
+
+    }
+
     .underline-nav-home {
         display: none;
-  
+
     }
 }
 
 
 @media (min-width: 767px) and (max-width: 1024px) {
-    
-    .font-about{
+
+    .font-about {
         font-size: 15px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 20px;
     }
-    
+
     .border-icon-about {
         border: solid 1px rgb(211, 207, 207);
         display: inline-block;
         width: 25px;
         height: 25px;
         border-radius: 50%;
-     
+
     }
-    
-    
+
+
     #about i {
         text-align: center;
         margin-left: 30% !important;
@@ -254,22 +267,19 @@
         color: var(--brown);
         font-size: 10px;
     }
-    
+
     #about .fa-users {
         margin-left: 25% !important;
         margin-top: 25% !important;
     }
-  
+
 }
 
 
 @media (min-width: 0px) and (max-width: 767px) {
-   
-    .font-about{
+
+    .font-about {
         padding-left: 25px;
     }
-   
+
 }
-
-
-
