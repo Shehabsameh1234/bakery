@@ -83,45 +83,7 @@ inner1.style.backgroundImage=`url(${prevsrc})`
 
 
 
-// document.addEventListener("click",function(e){
-// var navandtabid=e.target.id
-// currrentindex++
-// if(navandtabid==="pills-profile-tab"){
-//   nexticonmodal.addEventListener("click",function(){
-//     if(currrentindex===12){
-//       currrentindex=9
-//     }
-//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
-//   inner1.style.backgroundImage=`url(${nextsrc})`
-//   })
-// }
-// else if(navandtabid==="pills-contact-tab"){
-//   nexticonmodal.addEventListener("click",function(){
-//     if(currrentindex===15){
-//       currrentindex=12
-//     }
-//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
-//   inner1.style.backgroundImage=`url(${nextsrc})`
-//   })
-// }
-// else if(navandtabid==="pills-cookies-tab"){
-//   nexticonmodal.addEventListener("click",function(){
-//     if(currrentindex===18){
-//       currrentindex=15
-//     }
-//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
-//   inner1.style.backgroundImage=`url(${nextsrc})`
-//   })
-// }else {
-//   nexticonmodal.addEventListener("click",function(){
-//     if(currrentindex===9){
-//       currrentindex=0
-//     }
-//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
-//   inner1.style.backgroundImage=`url(${nextsrc})`
-//   })
-// }
-// })
+
 
 
 
