@@ -35,6 +35,14 @@
     #offer {
         margin-top: 150px;
     }
+
+    #inner {
+        width: 90%;
+        height: 350px;
+    }
+    .bakery-font {
+        font-size: 2.1rem;
+    }
 }
 
 
@@ -74,6 +82,11 @@
         margin-top: 90px;
     }
 
+    #inner {
+        width: 90%;
+        height: 400px;
+    }
+
 }
 
 
@@ -102,6 +115,11 @@
         margin-top: 0px;
     }
 
+    #inner {
+        width: 90%;
+        height: 450px;
+    }
+
 }
 
 
@@ -113,6 +131,10 @@
     #offer {
 
         margin-top: 0px;
+    }
+    #inner {
+        width: 70%;
+        height: 500px;
     }
 }
 
@@ -126,6 +148,10 @@
         margin-top: 0px;
     }
 
+    #inner {
+        width: 80%;
+        height: 700px;
+    }
 
 }
 
@@ -168,6 +194,11 @@
 
         margin-top: 10px;
     }
+    #inner {
+        width: 80%;
+        height: 700px;
+    }
+
 }
 
 /* Desktops and laptops ----------- */
@@ -189,6 +220,12 @@
 
         margin-top: 40px;
     }
+    #inner {
+        width: 60%;
+        height: 700px;
+    }
+
+   
 
 }
 

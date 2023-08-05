@@ -16,18 +16,22 @@ let imglogo = document.getElementById("img-logo")
 let imgGallery=document.querySelectorAll("#gallery img")
 let inner1=document.getElementById("inner")
 let galleryModal=document.querySelector("#gallery-modal")
-let iconZoomGalery=document.getElementById("iconzoom")
+let iconZoomGalery=Array.from(document.querySelectorAll("#gallery i"))
 
 
 
-iconZoomGalery.addEventListener("click",function (e){
-let sss=(e.target.getAttribute("src"))
+
+iconZoomGalery[0].addEventListener("click",function (e){
+let srcimg=(e.target.getAttribute("src"))
 galleryModal.style.display="block"
-inner1.style.backgroundImage=`url(${sss})`
+console.log("shehab")
+inner1.style.backgroundImage=`url(${srcimg})`
 })
 
 
-
+function closemoadl(){
+  galleryModal.style.display="none"
+}
 
 
 
@@ -116,17 +120,17 @@ function slider() {
 }
 
 
-// document.onreadystatechange = function () {
-//   if (document.readyState !== "complete") {
-//      document.querySelector("body").style.visibility = "hidden";
-//      document.getElementById("loading_indicator").style.visibility = "visible";
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+     document.querySelector("body").style.visibility = "hidden";
+     document.getElementById("loading_indicator").style.visibility = "visible";
     
-//   } else {
-//      setTimeout(() => {
-//         document.getElementById("loading_indicator").style.display ="none";
-//         document.querySelector("body").style.visibility = "visible";
-//      }, 2000)
-//   }
-// };
+  } else {
+     setTimeout(() => {
+        document.getElementById("loading_indicator").style.display ="none";
+        document.querySelector("body").style.visibility = "visible";
+     }, 2000)
+  }
+};
 
 
