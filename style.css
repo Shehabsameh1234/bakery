@@ -493,7 +493,7 @@ ul {
 }
 
 #inner {
-    width: 50%;
+    width: 90%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
