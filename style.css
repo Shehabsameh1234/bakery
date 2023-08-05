@@ -486,6 +486,7 @@ ul {
     left: 0;
     bottom: 0;
     right: 0;
+    z-index: 5555555555;
     background-color: rgba(0, 0, 0, 0.251);
     display: none;
     justify-content: center;
