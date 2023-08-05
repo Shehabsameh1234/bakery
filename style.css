@@ -490,6 +490,7 @@ ul {
     display: none;
     justify-content: center;
     align-items: center;
+    transition: all 2s;
 }
 
 #inner {

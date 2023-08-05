@@ -19,14 +19,19 @@ let galleryModal=document.querySelector("#gallery-modal")
 let iconZoomGalery=Array.from(document.querySelectorAll("#gallery i"))
 
 
+for(let i=0;i<iconZoomGalery.length;i++){
 
-
-iconZoomGalery[0].addEventListener("click",function (e){
+iconZoomGalery[i].addEventListener("click",function (e){
 let srcimg=(e.target.getAttribute("src"))
 galleryModal.style.display="block"
 console.log("shehab")
 inner1.style.backgroundImage=`url(${srcimg})`
 })
+}
+
+
+
+
 
 
 function closemoadl(){
@@ -120,17 +125,17 @@ function slider() {
 }
 
 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-     document.querySelector("body").style.visibility = "hidden";
-     document.getElementById("loading_indicator").style.visibility = "visible";
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//      document.querySelector("body").style.visibility = "hidden";
+//      document.getElementById("loading_indicator").style.visibility = "visible";
     
-  } else {
-     setTimeout(() => {
-        document.getElementById("loading_indicator").style.display ="none";
-        document.querySelector("body").style.visibility = "visible";
-     }, 2000)
-  }
-};
+//   } else {
+//      setTimeout(() => {
+//         document.getElementById("loading_indicator").style.display ="none";
+//         document.querySelector("body").style.visibility = "visible";
+//      }, 2000)
+//   }
+// };
 
 
