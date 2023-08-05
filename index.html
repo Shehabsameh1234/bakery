@@ -251,8 +251,8 @@
                     type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Breads</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-shehab-tab" data-bs-toggle="pill" data-bs-target="#pills-shehab"
-                    type="button" role="tab" aria-controls="pills-shehab" aria-selected="false">Cookies</button>
+                <button class="nav-link" id="pills-cookies-tab" data-bs-toggle="pill" data-bs-target="#pills-cookies"
+                    type="button" role="tab" aria-controls="pills-cookies" aria-selected="false">Cookies</button>
             </li>
 
         </ul>
@@ -415,7 +415,7 @@
             </div>
 
 
-            <div class="tab-pane fade" id="pills-shehab" role="tabpanel" aria-labelledby="pills-shehab-tab"
+            <div class="tab-pane fade" id="pills-cookies" role="tabpanel" aria-labelledby="pills-cookies-tab"
                 tabindex="0">
 
                 <div>
@@ -459,8 +459,8 @@
     <div  id="gallery-modal" >
         <div id="inner" class=" d-flex  p-2 justify-content-between align-items-center position-relative">
             <i id="closeEl" onclick="closemoadl()"  class="fa-solid text-white fa-xmark fa-2x position-absolute top-0 end-0 m-3"></i>
-            <i id="prev" class="fa-solid text-white fa-chevron-left fa-2x"></i>
-            <i id="next" class="fa-solid text-white fa-chevron-right fa-2x"></i>
+            <i id="prev" onclick="prevpic()" class="fa-solid text-white fa-chevron-left fa-2x"></i>
+            <i id="next" onclick="nextpic()"   class="fa-solid text-white fa-chevron-right fa-2x"></i>
         </div>
     </div>
 <!-- gallery-modal -->

@@ -17,28 +17,111 @@ let imgGallery=document.querySelectorAll("#gallery img")
 let inner1=document.getElementById("inner")
 let galleryModal=document.querySelector("#gallery-modal")
 let iconZoomGalery=Array.from(document.querySelectorAll("#gallery i"))
+let currrentindex=0
+let nexticonmodal=document.getElementById("next")
+let previconmodal=document.getElementById("prev")
 
 
-for(let i=0;i<iconZoomGalery.length;i++){
-
-iconZoomGalery[i].addEventListener("click",function (e){
-let srcimg=(e.target.getAttribute("src"))
+for(var i=0;i<iconZoomGalery.length;i++){
+iconZoomGalery[i].addEventListener("click",function (e){ 
+   currrentindex = iconZoomGalery.indexOf(e.target)
+ srcimg=(e.target.getAttribute("src"))
 galleryModal.style.display="block"
-console.log("shehab")
 inner1.style.backgroundImage=`url(${srcimg})`
 })
 }
-
-
-
-
-
 
 function closemoadl(){
   galleryModal.style.display="none"
 }
 
 
+
+function prevpic(){
+  currrentindex--
+  if(currrentindex===14){
+    currrentindex=17
+  }if(currrentindex===11){
+    currrentindex=14
+  }if(currrentindex===8){
+currrentindex=11
+  }if(currrentindex===-1){
+    currrentindex=8
+
+  }
+
+
+console.log(currrentindex)
+
+
+let prevsrc=iconZoomGalery[currrentindex].getAttribute("src")
+inner1.style.backgroundImage=`url(${prevsrc})`
+}
+
+
+function nextpic(){
+  currrentindex++
+  if(currrentindex===9){
+    currrentindex=0
+  }if(currrentindex===12){
+    currrentindex=9
+  }if(currrentindex===15){
+currrentindex=12
+  }if(currrentindex===18){
+currrentindex=15
+  }
+  console.log(currrentindex)
+let prevsrc=iconZoomGalery[currrentindex].getAttribute("src")
+inner1.style.backgroundImage=`url(${prevsrc})`
+}
+
+
+
+
+
+
+
+
+
+// document.addEventListener("click",function(e){
+// var navandtabid=e.target.id
+// currrentindex++
+// if(navandtabid==="pills-profile-tab"){
+//   nexticonmodal.addEventListener("click",function(){
+//     if(currrentindex===12){
+//       currrentindex=9
+//     }
+//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
+//   inner1.style.backgroundImage=`url(${nextsrc})`
+//   })
+// }
+// else if(navandtabid==="pills-contact-tab"){
+//   nexticonmodal.addEventListener("click",function(){
+//     if(currrentindex===15){
+//       currrentindex=12
+//     }
+//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
+//   inner1.style.backgroundImage=`url(${nextsrc})`
+//   })
+// }
+// else if(navandtabid==="pills-cookies-tab"){
+//   nexticonmodal.addEventListener("click",function(){
+//     if(currrentindex===18){
+//       currrentindex=15
+//     }
+//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
+//   inner1.style.backgroundImage=`url(${nextsrc})`
+//   })
+// }else {
+//   nexticonmodal.addEventListener("click",function(){
+//     if(currrentindex===9){
+//       currrentindex=0
+//     }
+//   let nextsrc=iconZoomGalery[currrentindex].getAttribute("src")
+//   inner1.style.backgroundImage=`url(${nextsrc})`
+//   })
+// }
+// })
 
 
 
