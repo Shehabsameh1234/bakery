@@ -36,7 +36,7 @@
         margin-top: 150px;
     }
 
-    #inner {
+    #inner-modal {
         width: 90%;
         height: 350px;
     }
@@ -82,7 +82,7 @@
         margin-top: 90px;
     }
 
-    #inner {
+    #inner-modal {
         width: 90%;
         height: 400px;
     }
@@ -115,7 +115,7 @@
         margin-top: 0px;
     }
 
-    #inner {
+    #inner-modal {
         width: 90%;
         height: 450px;
     }
@@ -148,7 +148,7 @@
         margin-top: 0px;
     }
 
-    #inner {
+    #inner-modal {
         width: 80%;
         height: 700px;
     }
@@ -194,7 +194,7 @@
 
         margin-top: 10px;
     }
-    #inner {
+    #inner-modal {
         width: 80%;
         height: 700px;
     }
@@ -220,7 +220,7 @@
 
         margin-top: 40px;
     }
-    #inner {
+    #inner-modal {
         width: 60%;
         height: 700px;
     }
