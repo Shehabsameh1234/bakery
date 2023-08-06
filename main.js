@@ -17,8 +17,9 @@ let btnSlide=document.getElementById("btn-slide")
 let colorsSlide=document.getElementById("colors-slide")
 let randomImg=Array.from(document.querySelectorAll("#gallery img"))
 let bgHome=document.querySelector(".background-head")
+let settingicon=document.getElementById("fa-gear")
 
-
+console.log(settingicon)
 
 
 function randombg(){
@@ -33,17 +34,19 @@ function randombg(){
 gearIcon.addEventListener("click", function () {
   if (rightSlide.offsetWidth == "200") {
     rightSlide.style.width = "0px"
-    gearIcon.style.left = "0"
-    btnSlide.style.display="none"
-    colorsSlide.style.opacity="0"
-    colorsSlide.style.transition="all .1s"
+    settingicon.classList.remove("animation-gear")
+  btnSlide.style.display='none'
+  btnSlide.style.opacity='0'
+  colorsSlide.style.display="none"
+  colorsSlide.style.opacity="0"
+   
   } else if (rightSlide.offsetWidth == "0") {
     rightSlide.style.width = "200px"
-    gearIcon.style.left = "200px"
-    btnSlide.style.display="block"
+    settingicon.classList.add("animation-gear")
+    btnSlide.style.opacity='1'
+    btnSlide.style.display='block'
+    colorsSlide.style.display="flex"
     colorsSlide.style.opacity="1"
-    colorsSlide.style.transition="all 2s"
-
 
   }
 })
