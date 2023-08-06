@@ -526,15 +526,21 @@ ul {
     position: fixed;
     bottom: 25px;
     right: 30px;
-    border: var(--brown) 2px solid;
+    border: var(--brown) 1px solid;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
-    transition: all .5s;
+    transition: all .3s;
     opacity: 0;
 }
+.arrow-up:hover{
+    background-color: rgb(212, 210, 210);
+    border: transparent 1px solid;
+}
+
 .arrow-up i {
     color: var(--brown);
     cursor: pointer;
+    margin-top: 6px;
 }
