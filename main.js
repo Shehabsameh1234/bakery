@@ -13,19 +13,19 @@ let currrentindex = 0
 let arrowUp = document.getElementById("arrowup")
 let rightSlide = document.getElementById("right-slide")
 let gearIcon = document.getElementById("gearicon")
-let btnSlide=document.getElementById("btn-slide")
-let colorsSlide=document.getElementById("colors-slide")
-let randomImg=Array.from(document.querySelectorAll("#gallery img"))
-let bgHome=document.querySelector(".background-head")
-let settingicon=document.getElementById("fa-gear")
+let btnSlide = document.getElementById("btn-slide")
+let colorsSlide = document.getElementById("colors-slide")
+let randomImg = Array.from(document.querySelectorAll("#gallery img"))
+let bgHome = document.querySelector(".background-head")
+let settingicon = document.getElementById("fa-gear")
 
 console.log(settingicon)
 
 
-function randombg(){
-  randomnumber=Math.floor(Math.random()*randomImg.length)
-  let bghomesrc=randomImg[randomnumber].getAttribute("src")
-  bgHome.style.backgroundImage=`url(${bghomesrc})`
+function randombg() {
+  randomnumber = Math.floor(Math.random() * randomImg.length)
+  let bghomesrc = randomImg[randomnumber].getAttribute("src")
+  bgHome.style.backgroundImage = `url(${bghomesrc})`
 
 }
 
@@ -33,20 +33,27 @@ function randombg(){
 
 gearIcon.addEventListener("click", function () {
   if (rightSlide.offsetWidth == "200") {
-    rightSlide.style.width = "0px"
-    settingicon.classList.remove("animation-gear")
-  btnSlide.style.display='none'
-  btnSlide.style.opacity='0'
-  colorsSlide.style.display="none"
-  colorsSlide.style.opacity="0"
-   
+    rightSlide.style.width = "0px";
+    settingicon.classList.remove("animation-gear");
+    btnSlide.style.display = 'none';
+    btnSlide.style.opacity = '0';
+    colorsSlide.style.display = "none";
+    colorsSlide.style.opacity = "0";
+
   } else if (rightSlide.offsetWidth == "0") {
     rightSlide.style.width = "200px"
     settingicon.classList.add("animation-gear")
-    btnSlide.style.opacity='1'
-    btnSlide.style.display='block'
-    colorsSlide.style.display="flex"
-    colorsSlide.style.opacity="1"
+    btnSlide.style.opacity = '1';
+    colorsSlide.style.opacity = "1";
+
+
+    setTimeout(() => {
+      btnSlide.style.display = 'block';
+      colorsSlide.style.display = "flex";
+    }, 250)
+
+
+
 
   }
 })
