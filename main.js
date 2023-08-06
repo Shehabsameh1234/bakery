@@ -23,7 +23,18 @@ let previconmodal=document.getElementById("prev")
 let arrowUp=document.getElementById("arrowup")
 
 
+let shehab1=document.getElementById("shehab")
+let shehab2=document.getElementById("a7a")
 
+shehab2.addEventListener("click",function(){
+if(shehab1.offsetWidth == "200"){
+shehab1.style.width="0px"
+shehab2.style.left="100%"
+}else if(shehab1.offsetWidth == "0"){
+  shehab1.style.width="200px"
+  shehab2.style.left="78%"
+}
+})
 
 
 
@@ -49,7 +60,6 @@ galleryModal.style.display="block"
 inner1.style.backgroundImage=`url(${srcimg})`
 })
 }
-
 function closemoadl(){
   galleryModal.style.display="none"
 }
@@ -97,20 +107,6 @@ inner1.style.backgroundImage=`url(${prevsrc})`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function myFunction_red() {
   rootCss.style.setProperty('--brown', 'red');
 }
@@ -123,9 +119,6 @@ function myFunction_tomato() {
 function myFunction_black() {
   rootCss.style.setProperty('--brown', 'black');
 }
-
-
-
 
 
 window.onscroll = function () {
@@ -164,32 +157,32 @@ window.onscroll = function () {
 
 
 
-function slider() {
+// function slider() {
 
-   if (slideRight.offsetWidth == "200") {
-    slideRed.style.display = "none"
-    slideTeal.style.display = "none"
-    slideTomato.style.display = "none"
-    slideBlack.style.display = "none"
-    iconSliede.classList.remove("animation")
-    slideRight.style.width = "40px"
-    iconSliede.style.top = "3px"
+//    if (slideRight.offsetWidth == "200") {
+//     slideRed.style.display = "none"
+//     slideTeal.style.display = "none"
+//     slideTomato.style.display = "none"
+//     slideBlack.style.display = "none"
+//     iconSliede.classList.remove("animation")
+//     slideRight.style.width = "40px"
+//     iconSliede.style.top = "3px"
     
-  }
+//   }
 
-  else if (slideRight.offsetWidth == "40") {
-    slideRed.style.display = "inline-block"
-    slideTeal.style.display = "inline-block"
-    slideTomato.style.display = "inline-block"
-    slideBlack.style.display = "inline-block"
-    iconSliede.classList.add("animation")
-    iconSliede.style.position = "relative"
-    iconSliede.style.top = "-4PX"
-    slideRight.style.width = "200px"
+//   else if (slideRight.offsetWidth == "40") {
+//     slideRed.style.display = "inline-block"
+//     slideTeal.style.display = "inline-block"
+//     slideTomato.style.display = "inline-block"
+//     slideBlack.style.display = "inline-block"
+//     iconSliede.classList.add("animation")
+//     iconSliede.style.position = "relative"
+//     iconSliede.style.top = "-4PX"
+//     slideRight.style.width = "200px"
   
-  }
+//   }
 
-}
+// }
 
 
 // document.onreadystatechange = function () {
