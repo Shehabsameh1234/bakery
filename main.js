@@ -26,6 +26,7 @@ let arrowUp=document.getElementById("arrowup")
 
 
 
+
 var rootElement = document.documentElement;
 function scrollToTop() {
   rootElement.scrollTo({
@@ -140,6 +141,8 @@ window.onscroll = function () {
     spanBlog.classList.add("underline-nav")
     spanContact.classList.add("underline-nav")
     imglogo.setAttribute("src", "img/chef-hat (1).png")
+    arrowUp.style.opacity="1"
+
 
 
   } else {
@@ -152,6 +155,7 @@ window.onscroll = function () {
     spanBlog.classList.remove("underline-nav")
     spanContact.classList.remove("underline-nav")
     imglogo.setAttribute("src", "img/chef-hat (2).png")
+    arrowUp.style.opacity="0"
 
   }
 }
