@@ -20,6 +20,24 @@ let iconZoomGalery=Array.from(document.querySelectorAll("#gallery i"))
 let currrentindex=0
 let nexticonmodal=document.getElementById("next")
 let previconmodal=document.getElementById("prev")
+let arrowUp=document.getElementById("arrowup")
+
+
+
+
+
+var rootElement = document.documentElement;
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+arrowUp.addEventListener("click",scrollToTop );
+
+
+
+
 
 
 for(var i=0;i<iconZoomGalery.length;i++){

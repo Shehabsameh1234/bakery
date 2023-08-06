@@ -520,3 +520,19 @@ ul {
     cursor: pointer;
 }
 
+
+
+.arrow-up{
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    border: var(--brown) 2px solid;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.arrow-up i {
+    color: var(--brown);
+    cursor: pointer;
+}
