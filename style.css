@@ -395,10 +395,9 @@ ul {
 
 
 
-#gallery * {
+  #gallery span, #gallery button  {
     font-family: var(--font);
-
-}
+} 
 
 #gallery h2 {
     padding-top: 50px;
