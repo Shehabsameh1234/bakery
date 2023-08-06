@@ -13,7 +13,8 @@ let currrentindex = 0
 let arrowUp = document.getElementById("arrowup")
 let rightSlide = document.getElementById("right-slide")
 let gearIcon = document.getElementById("gearicon")
-
+let btnSlide=document.getElementById("btn-slide")
+let colorsSlide=document.getElementById("colors-slide")
 
 
 
@@ -22,10 +23,18 @@ let gearIcon = document.getElementById("gearicon")
 gearIcon.addEventListener("click", function () {
   if (rightSlide.offsetWidth == "200") {
     rightSlide.style.width = "0px"
-    gearIcon.style.left = "100%"
+    gearIcon.style.left = "0"
+    btnSlide.style.display="none"
+    colorsSlide.style.opacity="0"
+    colorsSlide.style.transition="all .1s"
   } else if (rightSlide.offsetWidth == "0") {
     rightSlide.style.width = "200px"
-    gearIcon.style.left = "78%"
+    gearIcon.style.left = "200px"
+    btnSlide.style.display="block"
+    colorsSlide.style.opacity="1"
+    colorsSlide.style.transition="all 2s"
+
+
   }
 })
 
@@ -100,18 +109,18 @@ function nextpic() {
 
 
 
-// function myFunction_red() {
-//   rootCss.style.setProperty('--brown', 'red');
-// }
-// function myFunction_teal() {
-//   rootCss.style.setProperty('--brown', 'teal');
-// }
-// function myFunction_tomato() {
-//   rootCss.style.setProperty('--brown', 'tomato');
-// }
-// function myFunction_black() {
-//   rootCss.style.setProperty('--brown', 'black');
-// }
+function myFunction_red() {
+  rootCss.style.setProperty('--brown', 'red');
+}
+function myFunction_teal() {
+  rootCss.style.setProperty('--brown', 'teal');
+}
+function myFunction_tomato() {
+  rootCss.style.setProperty('--brown', 'tomato');
+}
+function myFunction_black() {
+  rootCss.style.setProperty('--brown', 'black');
+}
 
 
 window.onscroll = function () {
@@ -146,17 +155,17 @@ window.onscroll = function () {
 
 
 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.getElementById("loading_indicator").style.visibility = "visible";
+// document.onreadystatechange = function () {
+//   if (document.readyState !== "complete") {
+//     document.querySelector("body").style.visibility = "hidden";
+//     document.getElementById("loading_indicator").style.visibility = "visible";
 
-  } else {
-    setTimeout(() => {
-      document.getElementById("loading_indicator").style.display = "none";
-      document.querySelector("body").style.visibility = "visible";
-    }, 2000)
-  }
-};
+//   } else {
+//     setTimeout(() => {
+//       document.getElementById("loading_indicator").style.display = "none";
+//       document.querySelector("body").style.visibility = "visible";
+//     }, 2000)
+//   }
+// };
 
 

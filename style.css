@@ -140,43 +140,55 @@ ul {
 
 
 
-#right-slide{
-    background-color: red;
+#right-slide {
+    background-color: rgb(255, 255, 255);
     width: 200px;
-    height: 200px;
+    height: 100px;
     position: sticky;
-top: 50%;
-left: 100%;
-float: left;
-z-index:555555 ;
-transition: all .5s;
+    top: 30%;
+    left: 0;
+    float: left;
+    z-index: 555555;
+    transition: all .3s;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+#right-slide .btn{
+background-color: transparent;
+position: absolute;
+left: 20%;
+top: 5%;
+transition: all .3s;
+color: var(--brown);
+border: solid 1px var(--brown);
 }
 
-#gearicon{
-    background-color: red;
-    width: 20px;
-    height: 20px;
+#right-slide .btn:hover{
+background-color: var(--brown);
+color: white;
+}
+
+#gearicon {
+    background-color: white;
+    width: 22px;
+    height: 30px;
     position: sticky;
-top: 50%;
-left: 78%;
-float: left;
-z-index:555555 ;
-transition: all .5s
-;
+    top: 35%;
+   left: 200px;
+    float: left;
+    z-index: 555555;
+    transition: all .3s;
+    text-align: center;
+    cursor: pointer;
+   border-bottom-right-radius: 15%;
+   border-top-right-radius: 15%;
 }
 
-
-
-.inside{
-    width: 40px;
-    height: 40px;
-    background-color: yellow;
-    position: relative;
-    left: 50%;
+.fa-gear{
+   margin-top: 7px;
 }
 
-
-/* .animation-gear {
+.animation-gear {
     animation: spin 2s linear infinite;
 }
 
@@ -191,7 +203,46 @@ transition: all .5s
 
     }
 
-} */
+}
+#colors-slide{
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    display: flex;
+   
+}
+.red{
+    width: 30px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: red;
+    filter: drop-shadow(rgb(185, 139, 139) 1px 1px);
+    cursor: pointer;
+}
+.teal{
+    width: 30px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: teal;
+    filter:drop-shadow(rgb(142, 191, 191) 1px 1px );
+    cursor: pointer;
+}
+.tomato{
+    width: 30px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: tomato;
+    filter: drop-shadow(rgb(183, 123, 113)  1px 1px);
+    cursor: pointer;
+}
+.black{
+    width: 30px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: black;
+    filter: drop-shadow(rgb(30, 29, 29) 1px 1px);
+    cursor: pointer;
+}
 
 
 
@@ -376,9 +427,10 @@ transition: all .5s
 
 
 
-  #gallery span, #gallery button  {
+#gallery span,
+#gallery button {
     font-family: var(--font);
-} 
+}
 
 #gallery h2 {
     padding-top: 50px;
@@ -503,7 +555,7 @@ transition: all .5s
 
 
 
-.arrow-up{
+.arrow-up {
     position: fixed;
     bottom: 25px;
     right: 30px;
@@ -515,7 +567,8 @@ transition: all .5s
     transition: all .3s;
     opacity: 0;
 }
-.arrow-up:hover{
+
+.arrow-up:hover {
     background-color: rgb(212, 210, 210);
     border: transparent 1px solid;
 }
