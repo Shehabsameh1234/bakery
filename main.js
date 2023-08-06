@@ -15,8 +15,18 @@ let rightSlide = document.getElementById("right-slide")
 let gearIcon = document.getElementById("gearicon")
 let btnSlide=document.getElementById("btn-slide")
 let colorsSlide=document.getElementById("colors-slide")
+let randomImg=Array.from(document.querySelectorAll("#gallery img"))
+let bgHome=document.querySelector(".background-head")
 
 
+
+
+function randombg(){
+  randomnumber=Math.floor(Math.random()*randomImg.length)
+  let bghomesrc=randomImg[randomnumber].getAttribute("src")
+  bgHome.style.backgroundImage=`url(${bghomesrc})`
+
+}
 
 
 
