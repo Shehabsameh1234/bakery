@@ -45,8 +45,6 @@ gearIcon.addEventListener("click", function () {
     settingicon.classList.add("animation-gear")
     btnSlide.style.opacity = '1';
     colorsSlide.style.opacity = "1";
-
-
     setTimeout(() => {
       btnSlide.style.display = 'block';
       colorsSlide.style.display = "flex";
