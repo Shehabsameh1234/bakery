@@ -394,6 +394,23 @@ ul {
 
 
 
+
+#gallery * {
+    font-family: var(--font);
+
+}
+
+#gallery h2 {
+    padding-top: 50px;
+    font-size: 55px;
+    font-family: var(--font-header);
+}
+
+#gallery h2 span {
+    color: var(--brown);
+    font-size: 70px;
+}
+
 .height-gallery-img {
     height: 272px;
     width: 405px;
@@ -503,3 +520,4 @@ ul {
     background-size: cover;
     cursor: pointer;
 }
+
