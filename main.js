@@ -1,3 +1,4 @@
+// variables
 let navBar = document.getElementById("nav-bar")
 let spanAbout = document.getElementById("span-about")
 let spanOffer = document.getElementById("span-offer")
@@ -26,81 +27,90 @@ let inputName = document.getElementById("inputname")
 let inputMail = document.getElementById("inputmail")
 let inputMessage = document.getElementById("inputmessage")
 let inputSubject = document.getElementById("inputsubject")
+// variables
+
+
+// regex code for vaidation
 var validname = /^[a-zA-Z ]{3,20}$/;
 var validemail = /^[\w-\.]+@([a-z]+\.)+[a-z]{2,4}$/;
 var validmessage = /\w+/;
+// regex code for vaidation
 
 
 
 
-function shehab(value){
-  
+// form validation
+function nameInPutValidation(value) {
+  let nametest = validname.test(value)
+  if (nametest == true) {
+    btnMessage.removeAttribute("data-bs-toggle")
+  } else if (value == "") {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
+  } else {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
+  }
+}
 
+function emailInPutValidation(value) {
+  let emailtest = validemail.test(value)
 
-let nametest = validname.test(value)
-console.log(nametest)
-  if( nametest == true){
-btnMessage.removeAttribute("data-bs-toggle")
-  }else{
-    btnMessage.setAttribute("data-bs-toggle","modal")
+  if (emailtest == true) {
+    btnMessage.removeAttribute("data-bs-toggle")
+  } else if (value == "") {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
+  } else {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
+
+  }
+}
+
+function messageInPutValidation(value) {
+  let messagetest = validmessage.test(value)
+  if (messagetest == true) {
+    btnMessage.removeAttribute("data-bs-toggle")
+  } else if (value = "") {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
+  } else {
+    btnMessage.setAttribute("data-bs-toggle", "modal")
   }
 }
 
 
-
-
-function messagesent(){
-
+function messagesent() {
   let messagetest = validmessage.test(inputMessage.value.toLowerCase())
   let emailtest = validemail.test(inputMail.value.toLowerCase())
   let nametest = validname.test(inputName.value.toLowerCase())
-
   if (messagetest == true && emailtest == true && nametest == true) {
     form.style.display = "none"
     messageSent.style.display = "block"
     clearinputs()
   }
- } 
-
+}
 function clearinputs() {
   inputMessage.value = ""
   inputName.value = ""
   inputMail.value = ""
   inputSubject.value = ""
 }
-
 spanHere.addEventListener("click", function () {
   form.style.display = "block"
   messageSent.style.display = "none"
+  btnMessage.setAttribute("data-bs-toggle", "modal")
 })
+// form validation
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// get randonm background by button in the slider
 function randombg() {
   randomnumber = Math.floor(Math.random() * randomImg.length)
   let bghomesrc = randomImg[randomnumber].getAttribute("src")
   bgHome.style.backgroundImage = `url(${bghomesrc})`
-
 }
+// get randonm background by button in the slider
 
 
 
+// gear icon in the slider 
 gearIcon.addEventListener("click", function () {
   if (rightSlide.offsetWidth == "200") {
     rightSlide.style.width = "0px";
@@ -121,17 +131,24 @@ gearIcon.addEventListener("click", function () {
     }, 250)
   }
 })
+// gear icon in the slider 
 
 
+
+
+// arrow up that move to the top of page
 arrowUp.onclick = function () {
   scroll({
     top: 0,
     behavior: "smooth"
   })
 }
+// arrow up that move to the top of page
 
 
 
+
+// press on gallery zoom icon to open the gallery modal
 for (var i = 0; i < iconZoomGalery.length; i++) {
   iconZoomGalery[i].addEventListener("click", function (e) {
     currrentindex = iconZoomGalery.indexOf(e.target)
@@ -140,12 +157,18 @@ for (var i = 0; i < iconZoomGalery.length; i++) {
     innerModal.style.backgroundImage = `url(${srcimg})`
   })
 }
+// press on gallery zoom icon to open the modal gallery
+
+
+// press on gallery modal xmark icon to close the modal gallery
 function closemoadl() {
   galleryModal.style.display = "none"
 }
+// press on gallery modal xmark icon to close the modal gallery
 
 
 
+// press on left arrow in gallery modal to get the previous pic
 function prevpic() {
   currrentindex--
   if (currrentindex === 14) {
@@ -158,16 +181,13 @@ function prevpic() {
     currrentindex = 8
 
   }
-
-
-  console.log(currrentindex)
-
-
   let prevsrc = iconZoomGalery[currrentindex].getAttribute("src")
   innerModal.style.backgroundImage = `url(${prevsrc})`
 }
+// press on left arrow in gallery modal to get the previous pic
 
 
+// press on right arrow in gallery modal to get the next pic
 function nextpic() {
   currrentindex++
   if (currrentindex === 9) {
@@ -179,14 +199,15 @@ function nextpic() {
   } if (currrentindex === 18) {
     currrentindex = 15
   }
-  console.log(currrentindex)
   let prevsrc = iconZoomGalery[currrentindex].getAttribute("src")
   innerModal.style.backgroundImage = `url(${prevsrc})`
 }
+// press on right arrow in gallery modal to get the next pic
 
 
 
 
+// color function in the slider to change slite color
 function myFunction_red() {
   rootCss.style.setProperty('--brown', 'red');
 }
@@ -199,10 +220,12 @@ function myFunction_tomato() {
 function myFunction_black() {
   rootCss.style.setProperty('--brown', 'black');
 }
+// color function in the slider to change slite color
 
 
+
+//  Change a few things in window onscroll function
 window.onscroll = function () {
-
   if (scrollY >= 300) {
     navBar.style.background = "white"
     navBar.classList.remove("navbar-dark")
@@ -228,22 +251,24 @@ window.onscroll = function () {
 
   }
 }
+//  Change a few things in window onscroll function
 
 
 
+// lodaing icon before site loading
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.getElementById("loading_indicator").style.visibility = "visible";
 
+  } else {
+    setTimeout(() => {
+      document.getElementById("loading_indicator").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+    }, 2000)
+  }
+};
+// lodaing icon before site loading
 
-// document.onreadystatechange = function () {
-//   if (document.readyState !== "complete") {
-//     document.querySelector("body").style.visibility = "hidden";
-//     document.getElementById("loading_indicator").style.visibility = "visible";
-
-//   } else {
-//     setTimeout(() => {
-//       document.getElementById("loading_indicator").style.display = "none";
-//       document.querySelector("body").style.visibility = "visible";
-//     }, 2000)
-//   }
-// };
 
 

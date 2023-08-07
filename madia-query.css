@@ -49,8 +49,12 @@
     }
 
     .bg-sent-success p{
-        font-size: 12px;
+        font-size: 10px;
      }
+
+     .modal-body p{
+        font-size: 11px;
+    }
 }
 
 
@@ -102,6 +106,10 @@
     .bg-sent-success p{
         font-size: 12px;
      }
+
+     .modal-body p{
+        font-size: 11px;
+    }
 }
 
 
@@ -139,7 +147,7 @@
     }
 
     .bg-sent-success p{
-        font-size: 10px;
+        font-size: 12px;
      }
 }
 

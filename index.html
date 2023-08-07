@@ -19,10 +19,37 @@
 <body>
 
     <!-- loading icon before load -->
-    <!-- <div class="loading-sticky">
+    <div class="loading-sticky">
         <div id="loading_indicator"><i class="fa-solid loading-spininr fa-spinner"></i> </div>
-    </div> -->
+    </div>
     <!-- loading icon before load -->
+
+    <!-- right-slide -->
+    <div class="container-slider">
+        <div id="right-slide">
+
+            <button onclick="randombg()" id="btn-slide" class="btn">Rrandom Bg</button>
+
+            <div id="colors-slide">
+                <span onclick=" myFunction_red()" class="red me-1"></span>
+                <span onclick=" myFunction_teal()" class="teal  me-1"></span>
+                <span onclick=" myFunction_tomato()" class="tomato  me-1"></span>
+                <span onclick=" myFunction_black()" class="black  "></span>
+            </div>
+        </div>
+        <div id="gearicon">
+            <i id="fa-gear" class="fa-solid  fa-gear"></i>
+        </div>
+    </div>
+    <!-- right-slide -->
+
+    <!-- arrow up -->
+    <div id="arrowup" class="arrow-up">
+        <div class="text-center">
+            <i class="fa-solid  fa-angle-up"></i>
+        </div>
+    </div>
+    <!-- arrow up -->
 
 
     <!-- nav bar -->
@@ -74,34 +101,6 @@
     </nav>
     <!-- nav bar -->
 
-
-
-
-    <!-- right-slide -->
-    <div class="container-slider">
-        <div id="right-slide">
-
-            <button onclick="randombg()" id="btn-slide" class="btn">Rrandom Bg</button>
-
-            <div id="colors-slide">
-                <span onclick=" myFunction_red()" class="red me-1"></span>
-                <span onclick=" myFunction_teal()" class="teal  me-1"></span>
-                <span onclick=" myFunction_tomato()" class="tomato  me-1"></span>
-                <span onclick=" myFunction_black()" class="black  "></span>
-            </div>
-        </div>
-        <div id="gearicon">
-            <i id="fa-gear" class="fa-solid  fa-gear"></i>
-        </div>
-    </div>
-
-    <!-- right-slide -->
-
-
-
-
-
-
     <!-- home -->
     <header class="background-head  position-relative">
         <div class="head-welcome  ">
@@ -120,7 +119,6 @@
         </a>
     </header>
     <!-- home -->
-
 
     <!-- about -->
     <div id="about" class="p-md-5 p-0 mt-xxl-5 mt-0 ">
@@ -163,11 +161,9 @@
     <!-- about -->
 
 
-
+    <!-- offers -->
     <div id="offer">
         <h2 class="text-center"><span>O</span>ur <span>O</span>ffers.</h2>
-
-
         <div class="row g-0 w-offers m-auto ">
             <div class="col-lg-4 col-md-6 col-12 mt-5">
                 <div class="text-center offers-scale  p-5 mx-2 shadow ">
@@ -244,9 +240,7 @@
             </div>
         </div>
     </div>
-
-
-
+    <!-- offers -->
 
 
     <!-- gallery -->
@@ -486,8 +480,6 @@
     </div>
     <!-- gallery -->
 
-
-
     <!-- gallery-modal -->
     <div id="gallery-modal">
         <div id="inner-modal" class=" d-flex  p-2 justify-content-between align-items-center position-relative">
@@ -499,17 +491,7 @@
     </div>
     <!-- gallery-modal -->
 
-    <!-- arrow up -->
-    <div id="arrowup" class="arrow-up">
-        <div class="text-center">
-            <i class="fa-solid  fa-angle-up"></i>
-        </div>
-    </div>
-    <!-- arrow up -->
-
-
-
-<!-- contact -->
+    <!-- contact -->
     <div id="contact">
         <h2 class="text-center mb-5"><span>C</span>ontact <span>u</span>s.</h2>
 
@@ -520,120 +502,132 @@
             </iframe>
         </div>
 
-        <div class=" d-flex flex-wrap container text-center container mt-5 ">
+        <div class=" d-flex flex-wrap container text-center  container mt-5 ">
 
             <div class="col-md-6 col-12 mb-4  ">
-            <div class="d-flex bg-locations  shadow me-md-4 me-0  ">
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
+                <div class="d-flex bg-locations  shadow me-md-4 me-0  ">
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-start ">Our Address</h3>
+                        <p class="text-start  text-muted">cairo St 123-78B, Random 713, eg</p>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <h3 class="text-start ">Our Address</h3>
-                    <p class="text-start  text-muted">cairo St 123-78B, Random 713, eg</p>
-                </div>
-            </div>
             </div>
             <div class="col-md-6 col-12 mb-4  ">
-            <div class="d-flex bg-locations  shadow   ">
-                <div>
-                    <i class="fa-solid fa-square-phone"></i>
+                <div class="d-flex bg-locations  shadow   ">
+                    <div>
+                        <i class="fa-solid fa-square-phone"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-start ">Call Us</h3>
+                        <p class="text-start  text-muted">01098166918</p>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <h3 class="text-start ">Call Us</h3>
-                    <p class="text-start  text-muted">01098166918</p>
-                </div>
-            </div>
             </div>
             <div class="col-md-6 col-12 mb-4  ">
-            <div class="d-flex bg-locations  shadow me-md-4 me-0  ">
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="d-flex bg-locations  shadow me-md-4 me-0  ">
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-start ">email us</h3>
+                        <p class="text-start  text-muted">shehabsameh987123@gamil.com</p>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <h3 class="text-start ">email us</h3>
-                    <p class="text-start  text-muted">shehabsameh987123@gamil.com</p>
-                </div>
-            </div>
             </div>
             <div class="col-md-6 col-12 mb-4  ">
-            <div class="d-flex bg-locations  shadow   ">
-                <div>
-                    <i class="fa-solid fa-clock"></i>
+                <div class="d-flex bg-locations  shadow   ">
+                    <div>
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div class="mt-3">
+                        <h3 class="text-start ">Opening Hours</h3>
+                        <p class="text-start  text-muted">Mon-Sat: 11AM - 23PM; friday : Closed</p>
+                    </div>
                 </div>
-                <div class="mt-3">
-                    <h3 class="text-start ">Opening Hours</h3>
-                    <p class="text-start  text-muted">Mon-Sat: 11AM - 23PM; friday : Closed</p>
-                </div>
-            </div>
             </div>
         </div>
     </div>
     <!-- contact -->
 
-
+    <!-- send message -->
+    <form id="form-message">
+        <div class="bg-locations py-3 px-md-4 px-sm-2  shadow form-width  container">
+            <div class="d-md-flex">
+                <input type="text" id="inputname" onkeyup="nameInPutValidation(this.value)"
+                    class="form-control me-md-3 me-sm-0 my-3" placeholder="Enter your name">
+                <input type="text" id="inputmail" onkeyup="emailInPutValidation(this.value)" required
+                    class="form-control my-3" placeholder="Enter your e-mail">
+            </div>
+            <div>
+                <input type="text" id="inputsubject" class="form-control mb-3" placeholder="subject">
+            </div>
+            <div>
+                <textarea id="inputmessage" onkeyup="messageInPutValidation(this.value)" placeholder="Enter message"
+                    rows="8" class="form-control mb-3"></textarea>
+            </div>
+            <div class="text-center">
+                <button id="btn-message" onclick="messagesent()" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    type="button" class="btn-lg btn  sendmessage-btn ">Send Message</button>
+            </div>
+        </div>
+    </form>
     <!-- send message -->
 
-<form id="form-message" >
-<div class="bg-locations py-3 px-md-4 px-sm-2  shadow form-width  container" >
-    <div class="d-md-flex">
-        <input type="text" id="inputname" onkeyup="shehab(this.value)" class="form-control me-md-3 me-sm-0 my-3" placeholder="Enter your name">
-        <input type="text" id="inputmail"  class="form-control my-3" placeholder="Enter your e-mail">
-    </div>
-    <div>
-        <input type="text" id="inputsubject"  class="form-control mb-3" placeholder="subject">
-    </div>
-    <div>
-        <textarea id="inputmessage"   placeholder="Enter message" rows="8" class="form-control mb-3" ></textarea>
-    </div>
- <div class="text-center">
-    <button id="btn-message" onclick="messagesent()"   data-bs-toggle="modal"  data-bs-target="#staticBackdrop" type="button" class="btn-lg btn  contact-btn ">Send Message</button>
- </div>
-</div>
-</form>
-    <!-- send message -->
-    
-
-
     <!-- message sent -->
-<div id="messagesent" class="container bg-sent-success text-center p-4 rounded " >
-    <p class="text-white ">Your message has been sent successfully. press <span class="d-inline" id="pressHere">here</span> if you want to send another one </p>
-</div>
+    <div id="messagesent" class="container bg-sent-success text-center p-4 rounded ">
+        <p class="text-white ">Your message has been sent successfully. press <span class="d-inline" type="sumit"
+                id="pressHere">here</span> if you want to send another one </p>
+    </div>
     <!-- message sent -->
 
-
-
-
-
-
-<!-- modal form -->
-  <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">
-            <span></span> 
-            <span></span> 
-            <span></span> 
-        </h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- modal form -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-5"> somthing wrong, Please follow the rules below :</h4>
+                    <p><i class="fa-solid   fa-arrow-right"></i> name must contain at least 3characters</p>
+                    <p><i class="fa-solid  fa-arrow-right"></i> EX..shehab@gmail.com or shehab123@gmail.com</p>
+                    <p><i class="fa-solid  fa-arrow-right"></i> subject is not required </p>
+                    <p><i class="fa-solid  fa-arrow-right"></i> message is required don"t leave it empty</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-lg btn  modal-btn " data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <h4 class="mb-5"> somthing wrong, Please follow the rules below :</h4>
-            <p><i class="fa-solid   fa-arrow-right"></i> name must contain at least 3characters</p>
-            <p><i class="fa-solid  fa-arrow-right"></i> EX..shehab@gmail.com or shehab123@gmail.com</p>
-            <p><i class="fa-solid  fa-arrow-right"></i> subject is not required </p>
-            <p><i class="fa-solid  fa-arrow-right"></i> message is required don"t leave it empty</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn-lg btn  modal-btn " data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
-  </div>
-<!-- modal form -->
+    <!-- modal form -->
 
-
-
+    <!-- footer -->
+    <footer>
+        <div class="bg-footer">
+            <div class="d-flex p-5 justify-content-center">
+                <img src="img/chef-hat (2).png" alt="">
+                <h2 class="text-white">bakery</h2>
+            </div>
+            <p class="text-muted text-center">Copyright 2023. All rights reserved.</p>
+            <div class="text-center py-xl-4 py-5">
+                <span class="facebook"> <i class="fa-brands fa-facebook-f"></i></span>
+                <span class="google"> <i class="fa-brands fa-google"></i></span>
+                <span class="linkedin"> <i class="fa-brands fa-linkedin-in"></i></span>
+                <span class="twitter"><i class="fa-brands fa-x-twitter"></i></span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
 
 
 
