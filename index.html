@@ -576,7 +576,7 @@
 <form id="form-message" >
 <div class="bg-locations py-3 px-md-4 px-sm-2  shadow form-width  container" >
     <div class="d-md-flex">
-        <input type="text" id="inputname"  class="form-control me-md-3 me-sm-0 my-3" placeholder="Enter your name">
+        <input type="text" id="inputname" onkeyup="shehab(this.value)" class="form-control me-md-3 me-sm-0 my-3" placeholder="Enter your name">
         <input type="text" id="inputmail"  class="form-control my-3" placeholder="Enter your e-mail">
     </div>
     <div>
@@ -586,8 +586,7 @@
         <textarea id="inputmessage"   placeholder="Enter message" rows="8" class="form-control mb-3" ></textarea>
     </div>
  <div class="text-center">
-    <button id="btn-message" type="button" class="btn-lg btn  contact-btn ">Send Message</button>
-   
+    <button id="btn-message" onclick="messagesent()"   data-bs-toggle="modal"  data-bs-target="#staticBackdrop" type="button" class="btn-lg btn  contact-btn ">Send Message</button>
  </div>
 </div>
 </form>
@@ -602,6 +601,36 @@
     <!-- message sent -->
 
 
+
+
+
+
+<!-- modal form -->
+  <div class="modal fade"  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">
+            <span></span> 
+            <span></span> 
+            <span></span> 
+        </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h4 class="mb-5"> somthing wrong, Please follow the rules below :</h4>
+            <p><i class="fa-solid   fa-arrow-right"></i> name must contain at least 3characters</p>
+            <p><i class="fa-solid  fa-arrow-right"></i> EX..shehab@gmail.com or shehab123@gmail.com</p>
+            <p><i class="fa-solid  fa-arrow-right"></i> subject is not required </p>
+            <p><i class="fa-solid  fa-arrow-right"></i> message is required don"t leave it empty</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-lg btn  modal-btn " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal form -->
 
 
 

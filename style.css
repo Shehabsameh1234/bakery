@@ -672,3 +672,31 @@ form{
 }
 
 
+
+
+.modal-title span{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: var(--brown);
+    border-radius: 50%;
+}
+
+
+.modal-btn {
+    background-color: var(--brown);
+    color: white;
+    border: solid 2px transparent;
+    font-size: 1rem;
+    transition: all .5s;
+
+}
+
+.modal-btn:hover {
+    background-color: white;
+    border: solid 1px var(--brown);
+    color: var(--brown);
+}
+.modal-body p{
+    font-size: 13px;
+}

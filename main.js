@@ -33,26 +33,40 @@ var validmessage = /\w+/;
 
 
 
+function shehab(value){
+  
 
-btnMessage.addEventListener("click", function () {
+
+let nametest = validname.test(value)
+console.log(nametest)
+  if( nametest == true){
+btnMessage.removeAttribute("data-bs-toggle")
+  }else{
+    btnMessage.setAttribute("data-bs-toggle","modal")
+  }
+}
+
+
+
+
+function messagesent(){
 
   let messagetest = validmessage.test(inputMessage.value.toLowerCase())
   let emailtest = validemail.test(inputMail.value.toLowerCase())
-  let nametest = validname.test(inputName.value.toLowerCase()) 
+  let nametest = validname.test(inputName.value.toLowerCase())
 
-
-  if (messagetest == true && emailtest == true && nametest == true ) {
+  if (messagetest == true && emailtest == true && nametest == true) {
     form.style.display = "none"
     messageSent.style.display = "block"
     clearinputs()
-  } 
-
-})
+  }
+ } 
 
 function clearinputs() {
   inputMessage.value = ""
   inputName.value = ""
   inputMail.value = ""
+  inputSubject.value = ""
 }
 
 spanHere.addEventListener("click", function () {
