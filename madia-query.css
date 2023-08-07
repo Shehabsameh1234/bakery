@@ -241,14 +241,10 @@
 
 
 
-
-
-
-
 @media (min-width: 0px) and (max-width: 991px) {
     .nav-background {
         background-color: white !important;
-
+        margin-left: 25px !important;
     }
 
     #nav-bar .nav-link {
