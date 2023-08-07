@@ -265,7 +265,7 @@ document.onreadystatechange = function () {
     setTimeout(() => {
       document.getElementById("loading_indicator").style.display = "none";
       document.querySelector("body").style.visibility = "visible";
-    }, 2000)
+    }, 1500)
   }
 };
 // lodaing icon before site loading
