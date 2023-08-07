@@ -43,6 +43,14 @@
     .bakery-font {
         font-size: 2.1rem;
     }
+
+    .form-width{
+        width: 95%;
+    }
+
+    .bg-sent-success p{
+        font-size: 12px;
+     }
 }
 
 
@@ -87,6 +95,13 @@
         height: 400px;
     }
 
+    .form-width{
+        width: 95%;
+    }
+
+    .bg-sent-success p{
+        font-size: 12px;
+     }
 }
 
 
@@ -119,7 +134,13 @@
         width: 90%;
         height: 450px;
     }
+    .form-width{
+        width: 95%;
+    }
 
+    .bg-sent-success p{
+        font-size: 10px;
+     }
 }
 
 
@@ -136,6 +157,12 @@
         width: 70%;
         height: 500px;
     }
+  
+    .bg-sent-success p{
+        font-size: 12px;
+     }
+
+   
 }
 
 
@@ -152,6 +179,10 @@
         width: 80%;
         height: 700px;
     }
+
+    .bg-sent-success p{
+        font-size: 15px;
+     }
 
 }
 
@@ -198,6 +229,10 @@
         width: 80%;
         height: 700px;
     }
+
+
+ 
+   
 
 }
 

@@ -18,6 +18,62 @@ let colorsSlide = document.getElementById("colors-slide")
 let randomImg = Array.from(document.querySelectorAll("#gallery img"))
 let bgHome = document.querySelector(".background-head")
 let settingIcon = document.getElementById("fa-gear")
+let form = document.getElementById("form-message")
+let btnMessage = document.getElementById("btn-message")
+let messageSent = document.getElementById("messagesent")
+let spanHere = document.getElementById("pressHere")
+let inputName = document.getElementById("inputname")
+let inputMail = document.getElementById("inputmail")
+let inputMessage = document.getElementById("inputmessage")
+let inputSubject = document.getElementById("inputsubject")
+var validname = /^[a-zA-Z ]{3,20}$/;
+var validemail = /^[\w-\.]+@([a-z]+\.)+[a-z]{2,4}$/;
+var validmessage = /\w+/;
+
+
+
+
+
+btnMessage.addEventListener("click", function () {
+
+  let messagetest = validmessage.test(inputMessage.value.toLowerCase())
+  let emailtest = validemail.test(inputMail.value.toLowerCase())
+  let nametest = validname.test(inputName.value.toLowerCase()) 
+
+
+  if (messagetest == true && emailtest == true && nametest == true ) {
+    form.style.display = "none"
+    messageSent.style.display = "block"
+    clearinputs()
+  } 
+
+})
+
+function clearinputs() {
+  inputMessage.value = ""
+  inputName.value = ""
+  inputMail.value = ""
+}
+
+spanHere.addEventListener("click", function () {
+  form.style.display = "block"
+  messageSent.style.display = "none"
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -53,10 +109,10 @@ gearIcon.addEventListener("click", function () {
 })
 
 
-arrowUp.onclick=function(){
+arrowUp.onclick = function () {
   scroll({
-    top:0,
-    behavior:"smooth"
+    top: 0,
+    behavior: "smooth"
   })
 }
 
