@@ -247,7 +247,7 @@ window.onscroll = function () {
   }
 
   // put the underline on the selected section
-  if (scrollY >= aboutSection.offsetTop) {
+  if (scrollY >= aboutSection.offsetTop-200) {
     spanHome.classList.remove("underline-nav-home")
     spanAbout.classList.add("underline-nav")
 
@@ -255,17 +255,17 @@ window.onscroll = function () {
     spanHome.classList.add("underline-nav-home")
     spanAbout.classList.remove("underline-nav")
   }
-  if (scrollY >= offersSection.offsetTop) {
+  if (scrollY >= offersSection.offsetTop-200) {
     spanAbout.classList.remove("underline-nav")
     spanOffer.classList.add("underline-nav")
   } else {
     spanOffer.classList.remove("underline-nav")
-  } if (scrollY >= gallerySection.offsetTop) {
+  } if (scrollY >= gallerySection.offsetTop-200) {
     spanGallery.classList.add("underline-nav")
     spanOffer.classList.remove("underline-nav")
   } else {
     spanGallery.classList.remove("underline-nav")
-  } if (scrollY >= contactSection.offsetTop) {
+  } if (scrollY >= contactSection.offsetTop-200) {
     spanContact.classList.add("underline-nav")
     spanGallery.classList.remove("underline-nav")
   } else {
