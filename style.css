@@ -236,7 +236,7 @@ ul {
     position: relative;
     bottom: 1.5rem;
     left: 8px;
-    width: 0%;
+    width: 30%;
     height: 2px;
     background-color: var(--brown);
     transition: all .5s;

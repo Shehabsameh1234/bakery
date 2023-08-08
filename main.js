@@ -27,7 +27,13 @@ let inputName = document.getElementById("inputname")
 let inputMail = document.getElementById("inputmail")
 let inputMessage = document.getElementById("inputmessage")
 let inputSubject = document.getElementById("inputsubject")
+let aboutSection = document.getElementById("about")
+let spanHome = document.getElementById("span-home")
+let offersSection = document.getElementById("offer")
+let gallerySection = document.getElementById("gallery")
+let contactSection = document.getElementById("contact")
 // variables
+
 
 
 // regex code for vaidation
@@ -134,8 +140,6 @@ gearIcon.addEventListener("click", function () {
 // gear icon in the slider 
 
 
-
-
 // arrow up that move to the top of page
 arrowUp.onclick = function () {
   scroll({
@@ -226,30 +230,51 @@ function myFunction_black() {
 
 //  Change a few things in window onscroll function
 window.onscroll = function () {
+
   if (scrollY >= 300) {
     navBar.style.background = "white"
     navBar.classList.remove("navbar-dark")
     navBar.classList.add("navbar-light")
     document.getElementById("nav-bar").style.transition = "all .4s";
-    spanAbout.classList.add("underline-nav")
-    spanOffer.classList.add("underline-nav")
-    spanGallery.classList.add("underline-nav")
-    spanBlog.classList.add("underline-nav")
-    spanContact.classList.add("underline-nav")
     imglogo.setAttribute("src", "img/chef-hat (1).png")
     arrowUp.style.opacity = "1"
   } else {
     navBar.style.background = "transparent"
     navBar.classList.add("navbar-dark")
-    spanAbout.classList.remove("underline-nav")
-    spanOffer.classList.remove("underline-nav")
-    spanGallery.classList.remove("underline-nav")
-    spanBlog.classList.remove("underline-nav")
-    spanContact.classList.remove("underline-nav")
     imglogo.setAttribute("src", "img/chef-hat (2).png")
     arrowUp.style.opacity = "0"
 
   }
+
+  // put the underline on the selected section
+  if (scrollY >= aboutSection.offsetTop) {
+    spanHome.classList.remove("underline-nav-home")
+    spanAbout.classList.add("underline-nav")
+
+  } else {
+    spanHome.classList.add("underline-nav-home")
+    spanAbout.classList.remove("underline-nav")
+  }
+  if (scrollY >= offersSection.offsetTop) {
+    spanAbout.classList.remove("underline-nav")
+    spanOffer.classList.add("underline-nav")
+  } else {
+    spanOffer.classList.remove("underline-nav")
+  } if (scrollY >= gallerySection.offsetTop) {
+    spanGallery.classList.add("underline-nav")
+    spanOffer.classList.remove("underline-nav")
+  } else {
+    spanGallery.classList.remove("underline-nav")
+  } if (scrollY >= contactSection.offsetTop) {
+    spanContact.classList.add("underline-nav")
+    spanGallery.classList.remove("underline-nav")
+  } else {
+    spanContact.classList.remove("underline-nav")
+  }
+  // put the underline on the selected section
+
+
+
 }
 //  Change a few things in window onscroll function
 
