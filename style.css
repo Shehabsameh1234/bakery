@@ -172,6 +172,7 @@ body {
     filter: drop-shadow(rgb(30, 29, 29) 1px 1px);
     cursor: pointer;
 }
+
 /* slider */
 
 
@@ -240,6 +241,7 @@ ul {
     height: 2px;
     background-color: var(--brown);
     transition: all .5s;
+    animation: underline-nav .8s;
 }
 
 .underline-nav-home {
@@ -251,12 +253,32 @@ ul {
     height: 2px;
     background-color: var(--brown);
     transition: all .5s;
+    animation: underline-nav .8s;
 }
 
 .nav-item:hover .underline-nav,
 .nav-item:hover .underline-nav-home {
     width: 58%;
 }
+
+@keyframes underline-nav {
+    0% {
+        width: 30%;
+    }
+
+    50% {
+        width: 58%;
+    }
+
+    100% {
+        width: 30%;
+    }
+
+}
+
+
+
+
 /* nav bar */
 
 
@@ -311,6 +333,7 @@ ul {
     outline: 0;
     box-shadow: none;
 }
+
 /* home */
 
 
@@ -397,6 +420,7 @@ ul {
     }
 
 }
+
 /* dot animation */
 
 
@@ -416,6 +440,7 @@ ul {
     height: 40px;
     border-radius: 50%;
 }
+
 #about i {
     text-align: center;
     margin-left: 30% !important;
@@ -485,6 +510,7 @@ ul {
     transform: rotateX('180');
 
 }
+
 /* offers */
 
 
@@ -570,6 +596,7 @@ ul {
     top: 50%;
     opacity: 1;
 }
+
 /* gallery */
 
 
@@ -601,6 +628,7 @@ ul {
     background-size: cover;
     cursor: pointer;
 }
+
 /* gallety modal */
 
 
@@ -617,6 +645,7 @@ iframe {
 .map {
     text-align: center;
 }
+
 /* location map */
 
 
@@ -662,6 +691,7 @@ form {
     background-color: #f8f8f8;
     padding-bottom: 50px;
 }
+
 .form-control:focus {
     color: #212529;
     background-color: #fff;
@@ -701,6 +731,7 @@ form {
     color: #1058f2;
     cursor: pointer;
 }
+
 /* contacot us */
 
 
