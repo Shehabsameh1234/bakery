@@ -766,6 +766,10 @@ form {
     font-size: 13px;
 }
 
+.modal {
+    z-index: 555555555555555555555555555555555555555555;
+}
+
 /* contacot us  modal */
 
 
