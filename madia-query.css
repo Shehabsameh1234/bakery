@@ -161,8 +161,8 @@
 
         margin-top: 0px;
     }
-    #inner {
-        width: 70%;
+    #inner-modal {
+        width: 85%;
         height: 500px;
     }
   
@@ -184,7 +184,7 @@
     }
 
     #inner-modal {
-        width: 80%;
+        width: 85%;
         height: 700px;
     }
 
@@ -234,7 +234,7 @@
         margin-top: 10px;
     }
     #inner-modal {
-        width: 80%;
+        width: 85%;
         height: 700px;
     }
 
@@ -264,7 +264,7 @@
         margin-top: 40px;
     }
     #inner-modal {
-        width: 60%;
+        width: 70%;
         height: 700px;
     }
 
