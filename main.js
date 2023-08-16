@@ -290,7 +290,7 @@ document.onreadystatechange = function () {
     setTimeout(() => {
       document.getElementById("loading_indicator").style.display = "none";
       document.querySelector("body").style.visibility = "visible";
-    }, 1500)
+    }, 1000)
   }
 };
 // lodaing icon before site loading
