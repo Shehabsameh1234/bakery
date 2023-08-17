@@ -32,6 +32,8 @@ let spanHome = document.getElementById("span-home")
 let offersSection = document.getElementById("offer")
 let gallerySection = document.getElementById("gallery")
 let contactSection = document.getElementById("contact")
+let Slider=document.getElementById("slider")
+let learnMoreBtn=document.getElementById("learnmore")
 // variables
 
 
@@ -285,11 +287,18 @@ document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
     document.getElementById("loading_indicator").style.visibility = "visible";
+    Slider.style.opacity="0"
+    learnMoreBtn.style.opacity="0"
+    learnMoreBtn.style.transition="all 0s"
 
   } else {
     setTimeout(() => {
       document.getElementById("loading_indicator").style.display = "none";
       document.querySelector("body").style.visibility = "visible";
+      Slider.style.opacity="1"
+      learnMoreBtn.style.opacity="1"
+      learnMoreBtn.style.transition="all .5s"
+
     }, 1000)
   }
 };
