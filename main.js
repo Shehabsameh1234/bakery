@@ -37,6 +37,13 @@ let learnMoreBtn=document.getElementById("learnmore")
 // variables
 
 
+// loading spiner
+$(document).ready(function () {
+  $("#loading").fadeOut(3000)
+});
+// loading spiner
+
+
 
 // regex code for vaidation
 var validname = /^[a-zA-Z ]{3,20}$/;
@@ -282,27 +289,8 @@ window.onscroll = function () {
 
 
 
-// lodaing icon before site loading
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.getElementById("loading_indicator").style.visibility = "visible";
-    Slider.style.opacity="0"
-    learnMoreBtn.style.opacity="0"
-    learnMoreBtn.style.transition="all 0s"
 
-  } else {
-    setTimeout(() => {
-      document.getElementById("loading_indicator").style.display = "none";
-      document.querySelector("body").style.visibility = "visible";
-      Slider.style.opacity="1"
-      learnMoreBtn.style.opacity="1"
-      learnMoreBtn.style.transition="all .5s"
 
-    }, 1000)
-  }
-};
-// lodaing icon before site loading
 
 
 
