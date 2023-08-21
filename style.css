@@ -60,7 +60,7 @@ body {
 .container-slider {
     position: sticky;
     top: 30%;
-    z-index: 55555555555555;
+    z-index: 55555;
 }
 
 #right-slide {
