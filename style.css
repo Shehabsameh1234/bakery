@@ -14,17 +14,13 @@ body {
 }
 
 /* global */
-
-
 /* var */
 :root {
     --brown: #946621;
     --font: 'Alegreya Sans SC', sans-serif;
     --font-header: 'Amatic SC', cursive;
 }
-
 /* var */
-
 /* arrow up page */
 .arrow-up {
     position: fixed;
@@ -44,7 +40,6 @@ body {
     background-color: rgb(212, 210, 210);
     border: transparent 1px solid;
 }
-
 .arrow-up i {
     color: var(--brown);
     cursor: pointer;
@@ -52,10 +47,6 @@ body {
 }
 
 /* arrow up page */
-
-
-
-
 /* slider */
 .container-slider {
     position: sticky;
@@ -105,17 +96,13 @@ body {
     text-align: center;
     cursor: pointer;
     border-top-right-radius: 50%;
-
 }
-
 .fa-gear {
     margin-top: 7px;
 }
-
 .animation-gear {
     animation: spin 2s linear infinite;
 }
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -128,7 +115,6 @@ body {
     }
 
 }
-
 #colors-slide {
     position: absolute;
     top: 60%;
@@ -136,7 +122,6 @@ body {
     display: none;
 
 }
-
 .red {
     width: 30px;
     height: 20px;
@@ -174,8 +159,6 @@ body {
 }
 
 /* slider */
-
-
 /* loading spiner */
 #loading{
     position: fixed;
@@ -220,13 +203,7 @@ body {
     50% {transform: rotate(-90deg)}
   }
 
-
 /* loading spiner */
-
-
-
-
-
 /* nav bar */
 .img-logo {
     width: 40px;
@@ -295,15 +272,7 @@ ul {
     }
 
 }
-
-
-
-
 /* nav bar */
-
-
-
-
 /* home */
 .head-welcome {
     text-align: center;
@@ -315,7 +284,6 @@ ul {
     font-family: var(--font);
 
 }
-
 .background-head {
     background-image: url(img/Bagels/imggallery2.jpg);
     background-size: cover;
@@ -324,7 +292,6 @@ ul {
     width: 100%;
     height: 100vh;
 }
-
 .head-btn1 {
     background-color: var(--brown);
     color: white;
@@ -355,10 +322,6 @@ ul {
 }
 
 /* home */
-
-
-
-
 /* dot animation */
 .dot-animation {
     position: absolute;
@@ -442,10 +405,6 @@ ul {
 }
 
 /* dot animation */
-
-
-
-
 /* about */
 #about h3,
 #about p,
@@ -473,7 +432,6 @@ ul {
     margin-top: 25% !important;
 }
 
-
 .center-about-height {
     height: 500px;
 }
@@ -484,9 +442,6 @@ ul {
 }
 
 /* about */
-
-
-
 /* offers */
 #offer {
     background-color: #f8f8f8;
@@ -530,22 +485,15 @@ ul {
     transform: rotateX('180');
 
 }
-
 /* offers */
-
-
-
-
 /* gallery */
 .nav-pills .nav-link {
     color: black;
 }
-
 .nav-pills .nav-link.active {
     color: white;
     background-color: var(--brown)
 }
-
 #gallery span,
 #gallery button {
     font-family: var(--font);
@@ -619,10 +567,6 @@ ul {
 
 /* gallery */
 
-
-
-
-
 /* gallety modal */
 #gallery-modal {
     position: fixed;
@@ -650,12 +594,6 @@ ul {
 }
 
 /* gallety modal */
-
-
-
-
-
-
 /* location map */
 iframe {
     width: 100%;
@@ -667,10 +605,6 @@ iframe {
 }
 
 /* location map */
-
-
-
-
 /* contacot us */
 #contact {
     background-color: #f8f8f8;
@@ -753,10 +687,6 @@ form {
 }
 
 /* contacot us */
-
-
-
-
 /* contacot us  modal */
 .modal-title span {
     width: 15px;
@@ -765,8 +695,6 @@ form {
     background-color: var(--brown);
     border-radius: 50%;
 }
-
-
 .modal-btn {
     background-color: var(--brown);
     color: white;
@@ -775,7 +703,6 @@ form {
     transition: all .5s;
 
 }
-
 .modal-btn:hover {
     background-color: white;
     border: solid 1px var(--brown);
@@ -791,10 +718,6 @@ form {
 }
 
 /* contacot us  modal */
-
-
-
-
 /* footer */
 footer {
     position: relative;

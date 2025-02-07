@@ -35,25 +35,16 @@ let contactSection = document.getElementById("contact")
 let Slider=document.getElementById("slider")
 let learnMoreBtn=document.getElementById("learnmore")
 // variables
-
-
 // loading spiner
 $(document).ready(function () {
   $("#loading").fadeOut(3000)
 });
 // loading spiner
-
-
-
 // regex code for vaidation
 var validname = /^[a-zA-Z ]{3,20}$/;
 var validemail = /^[\w-\.]+@([a-z]+\.)+[a-z]{2,4}$/;
 var validmessage = /\w+/;
 // regex code for vaidation
-
-
-
-
 // form validation
 function nameInPutValidation(value) {
   let nametest = validname.test(value)
@@ -65,7 +56,6 @@ function nameInPutValidation(value) {
     btnMessage.setAttribute("data-bs-toggle", "modal")
   }
 }
-
 function emailInPutValidation(value) {
   let emailtest = validemail.test(value)
 
@@ -78,7 +68,6 @@ function emailInPutValidation(value) {
 
   }
 }
-
 function messageInPutValidation(value) {
   let messagetest = validmessage.test(value)
   if (messagetest == true) {
@@ -89,8 +78,6 @@ function messageInPutValidation(value) {
     btnMessage.setAttribute("data-bs-toggle", "modal")
   }
 }
-
-
 function messagesent() {
   let messagetest = validmessage.test(inputMessage.value.toLowerCase())
   let emailtest = validemail.test(inputMail.value.toLowerCase())
@@ -113,8 +100,6 @@ spanHere.addEventListener("click", function () {
   btnMessage.setAttribute("data-bs-toggle", "modal")
 })
 // form validation
-
-
 // get randonm background by button in the slider
 function randombg() {
   randomnumber = Math.floor(Math.random() * randomImg.length)
@@ -122,9 +107,6 @@ function randombg() {
   bgHome.style.backgroundImage = `url(${bghomesrc})`
 }
 // get randonm background by button in the slider
-
-
-
 // gear icon in the slider 
 gearIcon.addEventListener("click", function () {
   if (rightSlide.offsetWidth == "200") {
@@ -147,8 +129,6 @@ gearIcon.addEventListener("click", function () {
   }
 })
 // gear icon in the slider 
-
-
 // arrow up that move to the top of page
 arrowUp.onclick = function () {
   scroll({
@@ -157,10 +137,6 @@ arrowUp.onclick = function () {
   })
 }
 // arrow up that move to the top of page
-
-
-
-
 // press on gallery zoom icon to open the gallery modal
 for (var i = 0; i < iconZoomGalery.length; i++) {
   iconZoomGalery[i].addEventListener("click", function (e) {
@@ -171,16 +147,11 @@ for (var i = 0; i < iconZoomGalery.length; i++) {
   })
 }
 // press on gallery zoom icon to open the modal gallery
-
-
 // press on gallery modal xmark icon to close the modal gallery
 function closemoadl() {
   galleryModal.style.display = "none"
 }
 // press on gallery modal xmark icon to close the modal gallery
-
-
-
 // press on left arrow in gallery modal to get the previous pic
 function prevpic() {
   currrentindex--
@@ -198,8 +169,6 @@ function prevpic() {
   innerModal.style.backgroundImage = `url(${prevsrc})`
 }
 // press on left arrow in gallery modal to get the previous pic
-
-
 // press on right arrow in gallery modal to get the next pic
 function nextpic() {
   currrentindex++
@@ -216,10 +185,6 @@ function nextpic() {
   innerModal.style.backgroundImage = `url(${prevsrc})`
 }
 // press on right arrow in gallery modal to get the next pic
-
-
-
-
 // color function in the slider to change slite color
 function myFunction_red() {
   rootCss.style.setProperty('--brown', 'red');
@@ -234,9 +199,6 @@ function myFunction_black() {
   rootCss.style.setProperty('--brown', 'black');
 }
 // color function in the slider to change slite color
-
-
-
 //  Change a few things in window onscroll function
 window.onscroll = function () {
 
@@ -254,7 +216,6 @@ window.onscroll = function () {
     arrowUp.style.opacity = "0"
 
   }
-
   // put the underline on the selected section
   if (scrollY >= aboutSection.offsetTop-200) {
     spanHome.classList.remove("underline-nav-home")
@@ -281,9 +242,6 @@ window.onscroll = function () {
     spanContact.classList.remove("underline-nav")
   }
   // put the underline on the selected section
-
-
-
 }
 //  Change a few things in window onscroll function
 
